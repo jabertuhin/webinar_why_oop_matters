@@ -9,7 +9,7 @@ namespace Example1
         {
             var inputProcessor = new InputProcessor();
             var outputProcessor = new OutputProcessor(" ");
-            var fibonacciSerise = new FibonacciSerise(0, 1);
+            var fibonacciSeries = new FibonacciSeries(0, 1);
 
             while(true)
             {
@@ -17,15 +17,15 @@ namespace Example1
 
                 if(position.HasValue)
                 {
-                    outputProcessor.PrintNumber(fibonacciSerise.FirstNumber);
-                    outputProcessor.PrintNumber(fibonacciSerise.SecondNumber);
+                    outputProcessor.PrintNumber(fibonacciSeries.FirstNumber);
+                    outputProcessor.PrintNumber(fibonacciSeries.SecondNumber);
 
                     for(var i = 0; i < position; i++)
                     {
                         if (i < position - 1)
-                            outputProcessor.PrintNumber(fibonacciSerise.Next());
+                            outputProcessor.PrintNumber(fibonacciSeries.Next());
                         else
-                            outputProcessor.PrintLastNumber(fibonacciSerise.Next());
+                            outputProcessor.PrintLastNumber(fibonacciSeries.Next());
                     }
                 }
             }

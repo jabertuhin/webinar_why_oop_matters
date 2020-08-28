@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Example1.Revised
 {
-    public class FibonacciSerise
+    public class FibonacciSeries
     {
         private readonly int _first;
         private readonly int _second;
@@ -21,7 +21,7 @@ namespace Example1.Revised
             get { return _second; }
         }
 
-        public FibonacciSerise(int first, int second)
+        public FibonacciSeries(int first, int second)
         {
             _first = first;
             _second = second;
